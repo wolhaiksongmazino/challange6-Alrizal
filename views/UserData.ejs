@@ -1,0 +1,25 @@
+<h1>YourDataGame</h1>
+<button><a href="/UserData/insert">Add Your ID Data</a></button>
+<table>
+    <tr>
+        <th>Username</th>
+        <th>Password</th>
+
+    </tr>
+    <% data.forEach(e => { %>
+        <tr>
+            <td>
+                <%= e.userName %>
+            </td>
+            <td>
+                <%= e.passWord %>
+            </td>
+
+            </td>
+            <td>
+                <button><a href="/UserData/change/<%= e.id %>">Change</a></button>
+                <button><a href="/UserData/delete/<%= e.id %>"> Delete</a></button>
+            </td>
+        </tr>
+        <%})%>
+</table>

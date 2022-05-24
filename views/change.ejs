@@ -1,0 +1,8 @@
+<h1>Edit Data</h1>
+<form action="/UserData/change/<%= data.id %>" method="post">
+    <label for="">Username</label><br>
+    <input type="text" id="userName" name="userName" value="<%= data.userName %>" /><br><br>
+    <label for="">Password</label><br>
+    <input type="text" id="passWord" name="passWord" value="<%= data.passWord %>" /><br><br>
+    <button type="submit">Submit</button>
+</form>
